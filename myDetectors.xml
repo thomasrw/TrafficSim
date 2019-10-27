@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<detectors>
+<detectorDefinition id="scdot_0071_0e" lane="28981762_0" pos="0"/>
+<detectorDefinition id="scdot_0071_0w" lane="265151576_0" pos="0"/>
+
+<detectorDefinition id="scdot_0124_0w" lane="30199406#0_0" pos="0"/>
+<detectorDefinition id="scdot_0124_0e" lane="30199404#1_0" pos="0"/>
+
+<detectorDefinition id="scdot_0031_0w" lane="157654377#1_0" pos="0"/>
+<detectorDefinition id="scdot_0031_0e" lane="56393346#0_0" pos="0"/>
+
+<detectorDefinition id="scdot_0034_0w" lane="56393143_0" pos="0"/>
+<detectorDefinition id="scdot_0034_0e" lane="78489439#0_0" pos="0"/>
+
+<detectorDefinition id="scdot_0090_0w" lane="78509689_0" pos="0"/>
+<detectorDefinition id="scdot_0090_0e" lane="78509696_0" pos="0"/>
+
+<detectorDefinition id="scdot_0007_0s" lane="50054023_0" pos="0"/>
+<detectorDefinition id="scdot_0007_0n" lane="38968007_0" pos="0"/>
+
+<detectorDefinition id="scdot_0006_0s" lane="78420935_0" pos="0"/>
+<detectorDefinition id="scdot_0006_0n" lane="78389217_0" pos="0"/>
+</detectors>
