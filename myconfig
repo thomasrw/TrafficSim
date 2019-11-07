@@ -26,14 +26,14 @@
 
     <output>
         <write-license value="false" type="BOOL" help="Include license info into every output file"/>
-        <output-prefix value="mape_out" type="STR" help="Prefix which is applied to all output files. The special string &apos;TIME&apos; is replaced by the current time."/>
+        <output-prefix value="TIME" type="STR" help="Prefix which is applied to all output files. The special string &apos;TIME&apos; is replaced by the current time."/>
         <precision value="2" type="INT" help="Defines the number of digits after the comma for floating point output"/>
         <precision.geo value="6" type="INT" help="Defines the number of digits after the comma for lon,lat output"/>
         <human-readable-time value="false" synonymes="H" type="BOOL" help="Write time values as hour:minute:second or day:hour:minute:second rathern than seconds"/>
         <netstate-dump value="netstate" synonymes="ndump netstate netstate-output" type="FILE" help="Save complete network states into FILE"/>
         <netstate-dump.empty-edges value="false" synonymes="dump-empty-edges netstate-output.empty-edges netstate.empty-edges" type="BOOL" help="Write also empty edges completely when dumping"/>
         <netstate-dump.precision value="2" synonymes="dump-precision netstate-output.precision netstate.precision" type="INT" help="Write positions and speeds with the given precision (default 2)"/>
-        <emission-output value="" type="FILE" help="Save the emission values of each vehicle"/>
+        <emission-output value="/home/thomasrw/Model/emissions" type="FILE" help="Save the emission values of each vehicle"/>
         <emission-output.precision value="2" type="INT" help="Write emission values with the given precision (default 2)"/>
         <battery-output value="" type="FILE" help="Save the battery values of each vehicle"/>
         <battery-output.precision value="2" type="INT" help="Write battery values with the given precision (default 2)"/>
@@ -164,7 +164,7 @@
 
     <emissions>
         <phemlight-path value="./PHEMlight/" type="FILE" help="Determines where to load PHEMlight definitions from."/>
-        <device.emissions.probability value="-1" type="FLOAT" help="The probability for a vehicle to have a &apos;emissions&apos; device"/>
+        <device.emissions.probability value="1" type="FLOAT" help="The probability for a vehicle to have a &apos;emissions&apos; device"/>
         <device.emissions.explicit value="" synonymes="device.emissions.knownveh" type="STR" help="Assign a &apos;emissions&apos; device to named vehicles"/>
         <device.emissions.deterministic value="false" type="BOOL" help="The &apos;emissions&apos; devices are set deterministic using a fraction of 1000"/>
     </emissions>
