@@ -260,7 +260,7 @@
     </fcd_device>
 
     <traci_server>
-        <remote-port value="0" type="INT" help="Enables TraCI Server if set"/>
+        <remote-port value="39461" type="INT" help="Enables TraCI Server if set"/>
         <num-clients value="1" type="INT" help="Expected number of connecting clients"/>
     </traci_server>
 
