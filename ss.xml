@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- detectors for use as sources and sinks of interstates in and around Charleston SC -->
 <detectors>
-<detectorDefinition id="scdot_0071_0e" lane="28981762_0" pos="0"/>
-<detectorDefinition id="scdot_0071_1e" lane="28981762_1" pos="0"/>
-<detectorDefinition id="scdot_0071_2e" lane="28981762_2" pos="0"/>
+<detectorDefinition id="I26mm206_0e" lane="28981762_0" pos="0"/>
+<detectorDefinition id="I26mm206_1e" lane="28981762_1" pos="0"/>
+<detectorDefinition id="I26mm206_2e" lane="28981762_2" pos="0"/>
 
-<detectorDefinition id="scdot_0071_0w" lane="265151576_0" pos="-1"/>
-<detectorDefinition id="scdot_0071_1w" lane="265151576_1" pos="-1"/>
-<detectorDefinition id="scdot_0071_2w" lane="265151576_2" pos="-1"/>
+<detectorDefinition id="I26mm206_0w" lane="265151576_0" pos="-1"/>
+<detectorDefinition id="I26mm206_1w" lane="265151576_1" pos="-1"/>
+<detectorDefinition id="I26mm206_2w" lane="265151576_2" pos="-1"/>
 
 
 
