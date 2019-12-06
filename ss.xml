@@ -1,13 +1,138 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- detectors for use as sources and sinks of interstates in and around Charleston SC -->
 <detectors>
-<detectorDefinition id="I26mm206_0e" lane="28981762_0" pos="0"/>
-<detectorDefinition id="I26mm206_1e" lane="28981762_1" pos="0"/>
-<detectorDefinition id="I26mm206_2e" lane="28981762_2" pos="0"/>
+<!-- starting  I26 after mm 205 heading East -->
+<detectorDefinition id="I26emm206_0e" lane="28981762_0" pos="0"/>
+<detectorDefinition id="I26emm206_1e" lane="28981762_1" pos="0"/>
+<detectorDefinition id="I26emm206_2e" lane="28981762_2" pos="0"/>
 
-<detectorDefinition id="I26mm206_0w" lane="265151576_0" pos="-1"/>
-<detectorDefinition id="I26mm206_1w" lane="265151576_1" pos="-1"/>
-<detectorDefinition id="I26mm206_2w" lane="265151576_2" pos="-1"/>
+<detectorDefinition id="I26wmm206_0w" lane="265151576_0" pos="-1"/>
+<detectorDefinition id="I26wmm206_1w" lane="265151576_1" pos="-1"/>
+<detectorDefinition id="I26wmm206_2w" lane="265151576_2" pos="-1"/>
+
+<detectorDefinition id="hwy52stoI26mm209_0e" lane="30049231_0" pos="0"/>
+<detectorDefinition id="hwy52stoI26mm209_1e" lane="30049231_1" pos="0"/>
+
+<detectorDefinition id="I26wmm209tohwy52_0n" lane="30048660_0" pos="-1"/>
+
+<detectorDefinition id="I26wmm209tohwy52_0s" lane="30049266_0" pos="-1"/>
+
+<detectorDefinition id="I26wmm209toAshleyPhosphate_0w" lane="32400285_0" pos="-1"/>
+
+<detectorDefinition id="AshleyPhosphate_etoI26mm209_0e" lane="32400291#0_0" pos="0"/>
+
+<detectorDefinition id="AshleyPhosphate_wtoI26mm209_0e" lane="173223107_0" pos="-1"/>
+
+<detectorDefinition id="I26mm209exit_0e" lane="120087136#1_0" pos="0"/>
+<detectorDefinition id="I26mm209onramp_0e" lane="561394916_0" pos="0"/>
+
+<detectorDefinition id="I26emm211aexit_0e" lane="173222763#1_0" pos="0"/>
+<detectorDefinition id="I26emm211aexit_0w" lane="28983410#1_0" pos="0"/>
+
+<detectorDefinition id="I26mm211aonramp_0e" lane="166858854_0" pos="0"/>
+<detectorDefinition id="I26mm211aonramp_1e" lane="28983522_0" pos="0"/>
+
+<detectorDefinition id="I26mm211aonramp_0w" lane="28983481_0" pos="0"/>
+<detectorDefinition id="I26mm211aonramp_1w " lane="28983448#0_0" pos="0"/>
+<detectorDefinition id="I26wmm211aexit_0e" lane="180910010_0" pos="0"/>
+<detectorDefinition id="I26wmm211aexit_0w" lane="173222761#2_0" pos="0"/>
+
+<detectorDefinition id="I26emm211bexit_0e" lane="344307634_0" pos="0"/>
+<detectorDefinition id="I26emm211bonramp_0e " lane="180910000_0" pos="0"/>
+<detectorDefinition id="I26emm211bonramp_1e" lane="158140936#0_0" pos="0"/>
+<detectorDefinition id="I26wmm211bonramp_0w" lane="173545367#0_0" pos="0"/>
+<detectorDefinition id="I26wmm211bonramp_1w" lane="180910006_0" pos="0"/>
+<detectorDefinition id="I26wmm211bexit_0w" lane="158140943#1_0" pos="0"/>
+<detectorDefinition id="I26wmm211bexit_0e" lane="180910009_0" pos="0"/>
+
+<detectorDefinition id="I26wmm213malldrexit_0w" lane="179212621#1_0" pos="0"/>
+<detectorDefinition id="I26wmm213malldronramp_0w" lane="158140884_0" pos="0"/>
+
+<detectorDefinition id="I26emm213tangerexit_0e" lane="40964858_0" pos="0"/>
+
+<detectorDefinition id="I26emm213onramp_0e" lane="40445005_0" pos="0"/>
+<detectorDefinition id="I26emm213onramp_1e " lane="40445006_0" pos="0"/>
+<detectorDefinition id="I26emm213bexit_0e" lane="40959800_0" pos="0"/>
+<detectorDefinition id="I26emm213aexit_0w" lane="12162454#1_0" pos="0"/>
+<detectorDefinition id="I26wmm213onramp_0w" lane="40959798#0_0" pos="0"/>
+<detectorDefinition id="I26wmm213onramp_1w " lane="180910017_0" pos="0"/>
+<detectorDefinition id="I26wmm213exit_0e" lane="40959794_0" pos="0"/>
+<detectorDefinition id="I26wmm213exit_0w" lane="158140874#4_0" pos="0"/>
+
+<detectorDefinition id="I26emm215exit_0e" lane="630197866#0_0" pos="0"/>
+<detectorDefinition id="I26emm215exit_0w" lane="179192791_0" pos="0"/>
+<detectorDefinition id="I26emm215onramp_0e " lane="158140931_0" pos="0"/>
+<detectorDefinition id="I26emm215onramp_1e " lane="394200387#0_0" pos="0"/>
+<detectorDefinition id="I26wmm215onramp_0w " lane="394200385_0" pos="0"/>
+<detectorDefinition id="I26wmm215exit_0e" lane="180910011_0" pos="0"/>
+<detectorDefinition id="I26wmm215exit_0w" lane="630197865#0_0" pos="0"/>
+
+<detectorDefinition id="I26emm216onramp_0e" lane="28982503_0" pos="0"/>
+<detectorDefinition id="I26emm216onramp_1e " lane="28982086_0" pos="0"/>
+<detectorDefinition id="I26emm216exit_0n" lane="28982141_0" pos="0"/>
+<detectorDefinition id="I26emm216exit_0s" lane="180910022_0" pos="0"/>
+<detectorDefinition id="I26wmm216onramp_0w" lane="28982333_0" pos="0"/>
+<detectorDefinition id="I26wmm216onramp_1w " lane="28982130_0" pos="0"/>
+<detectorDefinition id="I26wmm216exit_0n" lane="28982373_0" pos="0"/>
+<detectorDefinition id="I26wmm216exit_0s" lane="28982124_0" pos="0"/>
+
+<!-- meeting street on/off ramps mm217 excluded by OpenStreetMap  hwy filter used for map conversion -->
+
+
+<detectorDefinition id="I26emm219aexit_0" lane="78412399_0" pos="0"/>
+<detectorDefinition id="I26emm219aexit_1" lane="78412405#1_0" pos="0"/>
+<detectorDefinition id="I26emm219bexit_0" lane="78412398_0" pos="0"/>
+<detectorDefinition id="I26emm219bexit_1" lane="78412397#1_0" pos="0"/>
+<detectorDefinition id="I26wmm219aonramp_0w" lane="78412400_0" pos="0"/>
+<detectorDefinition id="I26wmm219bonramp_0w" lane="78412390_0" pos="0"/>
+
+<!-- I26 mm 220 / Hwy17 area -->
+<detectorDefinition id="I26emm220cypressonramp_0e" lane="78414877_0" pos="0"/>
+<detectorDefinition id="I26wmm220romneyexit_0" lane="78415381_0" pos="0"/>
+
+<detectorDefinition id="I26emm221meetingexit_0" lane="38938254_0" pos="0"/>
+
+<detectorDefinition id="I26emm221septimaexit_0" lane="78419003_0" pos="0"/>
+<detectorDefinition id="I26emm221septimaexit_1" lane="78419889#1_0" pos="0"/>
+<detectorDefinition id="I26emm221septimaexit_2" lane="78419889#1_1" pos="0"/>
+
+<detectorDefinition id="Hwy17s_0" lane="38938280_0" pos="0"/>
+<detectorDefinition id="Hwy17s_1" lane="78413527_0" pos="0"/>
+<detectorDefinition id="Hwy17s_2" lane="78413527_1" pos="0"/>
+
+<detectorDefinition id="Hwy17n_0" lane="78419600#0_0" pos="0"/>
+<detectorDefinition id="Hwy17n_1" lane="78419600#0_1" pos="0"/>
+<detectorDefinition id="Hwy17n_2" lane="78419600#0_2" pos="0"/>
+<detectorDefinition id="Hwy17n_3" lane="78419600#0_3" pos="0"/>
+<detectorDefinition id="Hwy17n_4" lane="78419601_0" pos="0"/>
+
+
+<!-- Ravenel Bridge area -->
+<detectorDefinition id="MeetingonrampHwy17n" lane="78389222_0" pos="0"/>
+<detectorDefinition id="Hwy17sEastbayexit" lane="78389219_0" pos="0"/>
+<detectorDefinition id="EastbayHwy17nonramp" lane="10605296_0" pos="0"/>
+
+<detectorDefinition id="Hwy17nColemanexit_1" lane="631706721_1" pos="0"/>
+<detectorDefinition id="Hwy17nPatriotsPointexit" lane="78420941#1_0" pos="0"/>
+<detectorDefinition id="ColemanonrampHwy17s_0" lane="38968004_0" pos="0"/>
+<detectorDefinition id="ColemanonrampHwy17s_1" lane="38968004_1" pos="0"/>
+
+<detectorDefinition id="Hwy17njdexit_0" lane="78389215_0" pos="0"/>
+<detectorDefinition id="Hwy17njdexit_1" lane="78389215_1" pos="0"/>
+<detectorDefinition id="wingoonrampHwy17s" lane="38968132_0" pos="0"/>
+<detectorDefinition id="jdonrampHwy17s_0" lane="50718170#0_0" pos="0"/>
+<detectorDefinition id="jdonrampHwy17s_1" lane="50718170#0_1" pos="0"/>
+
+<!-- I526 working West to East -->
+<detectorDefinition id="I526samexit_0" lane="259665535_0" pos="0"/>
+<detectorDefinition id="I526samexit_1" lane="259665535_1" pos="0"/>
+<detectorDefinition id="I526samexit_2" lane="259665535_2" pos="0"/>
+<detectorDefinition id="I526samexit_3" lane="259665535_3" pos="0"/>
+<detectorDefinition id="Hwy17nColemanexit_1" lane="631706721_1" pos="0"/>
+<detectorDefinition id="Hwy17nColemanexit_1" lane="631706721_1" pos="0"/>
+<detectorDefinition id="Hwy17nColemanexit_1" lane="631706721_1" pos="0"/>
+
+
 
 
 
