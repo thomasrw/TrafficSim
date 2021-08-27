@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+<polling_station  id="0071_E" count="3890" edge="28981762" begin="4100" end="7699" />
+<polling_station  id="0071_W" count="1800" edge="265151576" begin="4100" end="7699" />
+
+<polling_station  id="0124_E" count="2014" edge="30199406#0" begin="4100" end="7699" />
+<polling_station  id="0124_W" count="3005" edge="30199404#1" begin="4100" end="7699" />
+
+<polling_station  id="0031_E" count="3039" edge="56393346#0" begin="4100" end="7699" />
+<polling_station  id="0031_W" count="1512" edge="157654377#1" begin="4100" end="7699" />
+
+<polling_station  id="0034_E" count="2360" edge="78489439#0" begin="4100" end="7699" />
+<polling_station  id="0034_W" count="1608" edge="56393143" begin="4100" end="7699" />
+
+<polling_station  id="0090_E" count="952" edge="78509696" begin="4100" end="7699" />
+<polling_station  id="0090_W" count="922" edge="78509689" begin="4100" end="7699" />
+
+<polling_station  id="0007_N" count="857" edge="38968007" begin="4100" end="7699" />
+<polling_station  id="0007_S" count="1116" edge="50054023" begin="4100" end="7699" />
+
+<polling_station  id="0006_N" count="314" edge="78389217" begin="4100" end="7699" />
+<polling_station  id="0006_S" count="371" edge="78420935" begin="4100" end="7699" />
+
+</additional>

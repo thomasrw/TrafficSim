@@ -288,7 +288,7 @@ def seekLeader(vehID, dist):
     <flow id="flow27" type="DEFAULT_VEHTYPE" begin="0" end="3600" vehsPerHour="327" from="gneE0" to="265151576"/>
 '''
 
-def createDemand(tripinfo, triproutes):
+def createDemand(tripinfo, triproutes, target='./demand.xml'):
     '''
     Reads a SUMO tripinfo file and writes a sorted list of vehicles suitable for an emitter demand file.
     Used for making a repeatable network load originally produced with probabilities e.g. vehicles per hour such that
@@ -313,6 +313,8 @@ def createDemand(tripinfo, triproutes):
     root[:] = sorted(root, key=lambda child: float(child.attrib['depart']))
 
     for att in root:
+        #print(att.tag)
+
         if 'id' in att.attrib:
             #remove extra attributes
             att.attrib.pop('departDelay')
@@ -361,7 +363,7 @@ def createDemand(tripinfo, triproutes):
     for v in vehicles:
         print(v.attrib)
     #todo clean this up
-    tree.write('./demand.xml')
+    tree.write(target)
 
 def buildRouteMap(input):
     '''
@@ -377,6 +379,8 @@ def buildRouteMap(input):
     #route_map['flow1'] = 'gneE12_to_158140892'
 
     for att in root:
+        if att.tag == 'vType':
+            continue
         route_map[att.attrib['id']] = att.attrib['from'] + '_to_' + att.attrib['to']
     return route_map
 

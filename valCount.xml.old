@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Mon Feb 24 08:43:42 2020 by Eclipse SUMO dfrouter Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/dfrouterConfiguration.xsd">
+
+    <input>
+        <net-file value="mape.net.xml"/>
+        <detector-files value="detOUT.xml"/>
+        <measure-files value="myFlow.csv"/>
+    </input>
+
+    <output>
+        <routes-output value="myOUT-route.xml"/>
+        <detectors-poi-output value="detPOI_OUT.xml"/>
+        <emitters-output value="myEmitterOut.xml"/>
+        <validation-output value="valCount.xml"/>
+        <validation-output.add-sources value="true"/>
+    </output>
+
+    <processing>
+        <revalidate-routes value="true"/>
+        <max-search-depth value="100"/>
+        <disallowed-edges value="120087136#0"/>
+        <randomize-flows value="true"/>
+        <revalidate-flows value="true"/>
+    </processing>
+
+    <defaults>
+        <departspeed value="10"/>
+    </defaults>
+
+    <time>
+        <end value="3600"/>
+    </time>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+    <random_number>
+        <seed value="0"/>
+    </random_number>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e1Detector id="validation_I26emm206_0e" lane="28981762_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm206_1e" lane="28981762_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm206_2e" lane="28981762_2" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm206_0w" lane="265151576_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm206_1w" lane="265151576_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm206_2w" lane="265151576_2" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_hwy52stoI26mm209_0e" lane="30049231_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_hwy52stoI26mm209_1e" lane="30049231_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm209tohwy52_0n" lane="30048660_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm209tohwy52_0s" lane="30049266_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm209toAshleyPhosphate_0w" lane="32400285_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_AshleyPhosphate_etoI26mm209_0e" lane="32400291#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_AshleyPhosphate_wtoI26mm209_0e" lane="173223107_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26mm209exit_0e" lane="158140892_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26mm209onramp_0e" lane="561394916_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm211aexit_0e" lane="173222763#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm211aexit_0w" lane="28983410#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26mm211aonramp_0e" lane="166858854_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26mm211aonramp_1e" lane="28983522_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26mm211aonramp_0w" lane="28983481_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26mm211aonramp_1w" lane="28983448#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm211aexit_0e" lane="180910010_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm211aexit_0w" lane="173222761#2_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm211bexit_0e" lane="344307634_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm211bonramp_0e" lane="180910000_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm211bonramp_1e" lane="158140936#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm211bonramp_0w" lane="173545367#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm211bonramp_1w" lane="180910006_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm211bexit_0w" lane="158140943#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm211bexit_0e" lane="180910009_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm213malldrexit_0w" lane="179212621#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm213malldronramp_0w" lane="158140884_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm213tangerexit_0e" lane="40964858_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm213onramp_0e" lane="40445005_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm213onramp_1e" lane="40445006_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm213bexit_0e" lane="40959800_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm213aexit_0w" lane="12162454#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm213onramp_0w" lane="40959798#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm213onramp_1w" lane="180910017_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm213exit_0e" lane="40959794_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm213exit_0w" lane="158140874#4_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm215exit_0e" lane="630197866#0_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm215exit_0w" lane="179192791_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm215onramp_0e" lane="158140931_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm215onramp_1e" lane="394200387#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm215onramp_0w" lane="394200385_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm215exit_0e" lane="180910011_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm215exit_0w" lane="630197865#0_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm216onramp_0e" lane="28982503_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm216onramp_1e" lane="28982086_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm216exit_0n" lane="28982141_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm216exit_0s" lane="180910022_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm216onramp_0w" lane="28982333_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm216onramp_1w" lane="28982130_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm216exit_0n" lane="28982373_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm216exit_0s" lane="28982124_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm219aexit_0" lane="78412399_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm219aexit_1" lane="78412405#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm219bexit_0" lane="78412398_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm219bexit_1" lane="78412397#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm219aonramp_0w" lane="78412400_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm219bonramp_0w" lane="78412390_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm220cypressonramp_0e" lane="78414877_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26wmm220romneyexit_0" lane="78415381_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm221meetingexit_0" lane="38938254_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm221septimaexit_0" lane="78419003_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm221septimaexit_1" lane="78419889#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I26emm221septimaexit_2" lane="78419889#1_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17s_0" lane="38938280_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17s_1" lane="78413527_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17s_2" lane="78413527_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17n_0" lane="78419600#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17n_1" lane="78419600#0_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17n_2" lane="78419600#0_2" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17n_3" lane="78419600#0_3" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17n_4" lane="78419601_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_MeetingonrampHwy17n" lane="78389222_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17sEastbayexit" lane="78389219_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_EastbayHwy17nonramp" lane="10605296_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17nColemanexit_0" lane="631706721_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17nColemanexit_1" lane="631706721_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17nPatriotsPointexit" lane="78420941#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_ColemanonrampHwy17s_0" lane="38968004_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_ColemanonrampHwy17s_1" lane="38968004_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17njdexit_0" lane="78389215_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17njdexit_1" lane="78389215_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_wingoonrampHwy17s" lane="38968132_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_jdonrampHwy17s_0" lane="50718170#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_jdonrampHwy17s_1" lane="50718170#0_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526samexit_0" lane="259665535_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526samexit_1" lane="259665535_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526samexit_2" lane="259665535_2" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526samexit_3" lane="259665535_3" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_SamI526onramp" lane="158140898_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17nI526onramp" lane="182932977#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_Hwy17sI526onramp" lane="158140939#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11onramp_0w" lane="158973900_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11onramp_0e" lane="158140918#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11onramp_1e" lane="179119401_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11exit_0w" lane="158140894_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11exit_1w" lane="158140916_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11exit_0e" lane="158140900_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm11exit_1e" lane="158140905_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm14onramp_0e" lane="39828214_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm14onramp_0w" lane="12144716_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm14exit_0e" lane="12144720_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm14exit_0w" lane="39828216_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15onramp_0w" lane="39831006#1_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15onramp_0e" lane="182932983#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15onramp_1e" lane="39831525_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15exit_0w" lane="78489610_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15exit_1w" lane="630172640_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15exit_0e" lane="39831524#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm15exit_1e" lane="78489609_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16aonramp_0w" lane="630176379_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm1aonramp_1w" lane="630176379_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16aexit_0e" lane="630176380_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16aexit_1e" lane="630176380_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16bonramp_0w" lane="39832449_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16bonramp_0e" lane="182932979#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16bonramp_1e" lane="39857653_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16bexit_0e" lane="39832433_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm16bexit_0w" lane="39832437_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18onramp_0s" lane="78498476_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18onramp_1s" lane="78498244#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18onramp_0n" lane="78498242_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18onramp_1n" lane="39836189#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18exit_0s" lane="78496928_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18exit_1s" lane="12145422_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18exit_0n" lane="78498568_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm18exit_1n" lane="78497554_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19onramp_0s" lane="78500099_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19onramp_1s" lane="78500476_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19onramp_0n" lane="78500475_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19onramp_1n" lane="78500098_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19exit_0s" lane="78499273_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19exit_1s" lane="78500808_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19exit_0n" lane="78500809_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19exit_1n" lane="78499272_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19Virginiaonramp_0" lane="78502097_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm19Virginiaexit_0" lane="78501226_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm23onramp_0s" lane="78503564_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm23onramp_0n" lane="629921202#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm23onramp_1n" lane="35067393#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm23exit_0s" lane="78503363_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm23exit_0n" lane="35067389_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm23exit_1n" lane="35067391#0_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm24onramp_0" lane="182932980_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm24onramp_1" lane="35067530_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm24exit_0" lane="35067532_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm24exit_1" lane="35067531_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28onramp_0w" lane="4423826_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28onramp_1w" lane="35067552_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28onramp_0e" lane="35067554_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28onramp_1e" lane="35067739_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28exit_0w" lane="78508226_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28exit_1w" lane="4423824#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28exit_0e" lane="35067553#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm28exit_1e" lane="78508841_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29onramp_0s" lane="78510231_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29onramp_0n" lane="49831939#0_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29onramp_0w" lane="191324072_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29onramp_1w" lane="191324072_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29exit_0n" lane="174309311#2_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29exit_0s" lane="78509826_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29exit_0e" lane="191324074_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm29exit_1e" lane="191324074_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30onramp_0w" lane="4423838_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30onramp_1w" lane="4423838_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30onramp_2w" lane="12146964_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30onramp_0e" lane="12145286_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30exit_0e" lane="265151584_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30exit_1e" lane="265151584_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_I526mm30exit_2e" lane="8408762_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0071_0e" lane="28981762_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0071_1e" lane="28981762_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0071_2e" lane="28981762_2" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0071_0w" lane="265151576_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0071_1w" lane="265151576_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0071_2w" lane="265151576_2" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0124_0e" lane="30199406#0_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0124_1e" lane="30199406#0_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0124_2e" lane="30199406#0_2" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0124_0w" lane="30199404#1_0" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0124_1w" lane="30199404#1_1" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0124_2w" lane="30199404#1_2" pos="1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0031_0e" lane="56393346#0_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0031_1e" lane="56393346#0_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0031_2e" lane="56393346#0_2" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0031_0w" lane="157654377#1_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0031_1w" lane="157654377#1_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0031_2w" lane="157654377#1_2" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0034_0e" lane="78489439#0_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0034_1e" lane="78489439#0_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0034_0w" lane="56393143_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0034_1w" lane="56393143_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0090_0e" lane="78509696_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0090_1e" lane="78509696_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0090_0w" lane="78509689_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0090_1w" lane="78509689_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_0n" lane="38968007_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_1n" lane="38968007_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_2n" lane="38968007_2" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_3n" lane="38968007_3" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_0s" lane="50054023_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_1s" lane="50054023_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_2s" lane="50054023_2" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0007_3s" lane="50054023_3" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0006_0n" lane="78389217_0" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0006_1n" lane="78389217_1" pos="-1.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0006_0s" lane="78420935_0" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+    <e1Detector id="validation_scdot_0006_1s" lane="78420935_1" pos="0.00" freq="60" friendlyPos="1" file="validation_dets.xml"/>
+</additional>

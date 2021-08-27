@@ -1,0 +1,97 @@
+#robert.w.thomas3@gmail.com
+#
+#Collect aggregate data from tripinfo output from Sumo simulations
+
+
+from xml.etree import ElementTree
+import os.path
+from os import path
+import sys
+
+#input = '/home/thomasrw/Model/2020-02-20-06-34-27tripinfo' #normal run
+#input = '/home/thomasrw/Model/2020-02-20-08-25-07tripinfo' #platoon run
+
+#input = '/home/thomasrw/j/2020-05-31-05-44-43tripinfo' #no look behind
+#input = '/home/thomasrw/j/2020-06-01-16-04-02tripinfo' #look behind
+
+#input = '/home/thomasrw/Model/2020-06-22-11-08-57tripinfo' #all platoon
+input = '/home/thomasrw/Model/2020-08-03-21-50-19tripinfo' #no platoon
+log = '/home/thomasrw/Desktop/eval log.csv'
+
+#todo rig to eval logs for each run group and produce a single report
+#example filename baseline_438_tripinfo
+prefix = sys.argv[1] #eg 'baseline'
+#prefix = "test"
+#mypath = '/home/thomasrw/Model/'
+mypath = '/work/thoma525/'
+
+
+
+def eval(input=input, log=log):
+    print(input)
+    print(log)
+    tree = ElementTree.parse(input)
+    root = tree.getroot()
+
+    count = 0 #number of vehicles completing route (unless incomplete trips are being reported)
+    time_loss = 0 #time lost in seconds due to travel below individual ideal speeds
+    fuel = 0 #total fuel consumption ml
+    route_length = 0 #distance traveled
+    trip_duration = 0 #time in seconds to reach destination
+    wait_time = 0 #time in seconds with speed below 0.1m/s (eg stop & go traffic)
+    #emissions from SUMO (also includes fuel)
+    CO = 0 #CO emission mg
+    CO2 = 0 #CO2 emission mg
+    HC = 0 #HC emission mg
+    PMx = 0 #PMx emission mg
+    NOx = 0 #NOx emission mg
+
+    for att in root:
+        #print(att.attrib['id'])
+        #print(att.find('emissions').attrib['fuel_abs'])
+        count += 1
+        time_loss += float(att.attrib['timeLoss'])
+        fuel += float(att.find('emissions').attrib['fuel_abs'])
+        CO += float(att.find('emissions').attrib['CO_abs'])
+        CO2 += float(att.find('emissions').attrib['CO2_abs'])
+        HC += float(att.find('emissions').attrib['HC_abs'])
+        PMx += float(att.find('emissions').attrib['PMx_abs'])
+        NOx += float(att.find('emissions').attrib['NOx_abs'])
+        route_length += float(att.attrib['routeLength'])
+        trip_duration += float(att.attrib['duration'])
+        wait_time += float(att.attrib['waitingTime'])
+    print(count)
+    if not path.exists(log):
+        f = open(log, "w")
+        f.write('Input, Veh Count,Total Timeloss,Total Fuel Consumption,Mean Timeloss,Mean Fuel Consumption,Mean Route Length,Mean Trip Duration,Mean Waitime,Mean CO,Mean CO2,Mean HC,Mean PMx,Mean NOx\n')
+    else:
+        f = open(log, "a")
+
+    f.write(input +','+ str(count) +',' + str(time_loss) +','+ str(fuel) +','+ str(time_loss / count) +','+ str(fuel / count) +','+ str(route_length / count) +','+ str(trip_duration / count) +','+ str(wait_time / count) +','+ str(CO / count) +','+ str(CO2 / count) +','+ str(HC / count) +','+ str(PMx / count) +','+ str(NOx / count) +'\n')
+    f.close()
+
+
+'''
+print('Veh Count: ' + str(count))
+print('Total TimeLoss: ' + str(time_loss))
+print('Total Fuel Consumption: ' + str(fuel))
+
+print('Mean TimeLoss: ' + str(time_loss/count))
+print('Mean Fuel Consumption: ' + str(fuel/count))
+print('Mean Route Length: ' + str(route_length/count))
+print('Mean Trip Duration: ' + str(trip_duration/count))
+print('Mean Wait Time: ' + str(wait_time/count))
+
+print('Mean CO: ' + str(CO/count))
+print('Mean CO2: ' + str(CO2/count))
+print('Mean HC: ' + str(HC/count))
+print('Mean PMx: ' + str(PMx/count))
+print('Mean NOx: ' + str(NOx/count))
+'''
+
+#eval()
+
+for i in range(1000):
+    Input = mypath + prefix + '_'+ str(i) + '_tripinfo'
+    Log = mypath + prefix +'_metrics.csv'
+    eval(Input, Log)

@@ -40,6 +40,7 @@ from xml.etree import ElementTree
 import random
 import math
 import time
+import sys
 
 #input = '/home/thomasrw/j/myOUT-route.xml'
 #constraints = '/home/thomasrw/j/constraints.xml'
@@ -47,8 +48,10 @@ import time
 #input = '/home/thomasrw/j/test_route.xml'
 #constraints = '/home/thomasrw/j/test_constraints.xml'
 
-input = '/home/thomasrw/Model/myOUT-route.xml'
-constraints = '/home/thomasrw/Model/mape_constraints.xml'
+input = '/home/thoma525/myOUT-route.xml'
+constraints = '/home/thoma525/mape_constraints2.xml'
+output_name = sys.argv[1]
+
 
 
 
@@ -331,10 +334,13 @@ class OD_Maker():
         #Alg Step 12 return solution
         return solution
 
-    def buildEmitter(self, od_values, file='/home/thomasrw/Desktop/newEmitterOut.xml'):
+    def buildEmitter(self, od_values, file='/home/thomasrw/Desktop/newEmitterOut.xml', beg=0, end=3599, Root=None, mark="a"):
         #todo needs a better default file location
         #tree = ElementTree.fromstring('<additional/>')
-        root = ElementTree.fromstring('<additional>\n<vType id="DEFAULT_VEHTYPE" speedFactor="normc(1.10,0.10,0.20,2.00)"/>\n<vType id="PLATOON_VEHTYPE" tau="0.1" color="green"/>\n<vType id="LEADER_VEHTYPE" color="blue" speedDev="0"/>\n</additional>')
+        if Root:
+            root = Root
+        else:
+            root = ElementTree.fromstring('<additional>\n<vType id="DEFAULT_VEHTYPE" speedFactor="normc(1.10,0.10,0.20,2.00)"/>\n<vType id="PLATOON_VEHTYPE" tau="0.1" color="green"/>\n<vType id="LEADER_VEHTYPE" color="blue" speedDev="0"/>\n</additional>')
 
         #    <flow id="flow1" type="DEFAULT_VEHTYPE" begin="500" end="4099" vehsPerHour="914.795" from="gneE12" to="158140892"/>
 
@@ -347,19 +353,23 @@ class OD_Maker():
             origin = route[0]
             destination = route[1]
             count = pair[1].strip("{} '")
-            if count == str(0):
+            count = int(count) * 2
+            #if count == str(0):
+            if count == 0:
                 continue #SUMO does not allow emiiter.xml to define flows with vehsPerHour = "0"
             #print(origin, destination)
             #splits[i] = splits[i].strip("{} '")
             flow = ElementTree.SubElement(root, 'flow')
-            flow.set('id', str(i))
+            flow.set('id', str(i) + str(mark))
             flow.set('type', 'DEFAULT_VEHTYPE')
-            flow.set('begin', '500')
-            flow.set('end', '4099')
-            flow.set('vehsPerHour', str(count))
+            flow.set('begin', str(beg))
+            flow.set('end', str(end))
+            #flow.set('vehsPerHour', str(count))
+            flow.set('probability', str(count/7200))
             flow.set('from', str(origin))
             flow.set('to', str(destination))
             flow.set('departLane', "free")
+            flow.set('departPos', "last")
             flow.set('departSpeed', "max")
             flow.tail="\n" #help xml output print in a more readable foramt
         #print(splits)
@@ -414,8 +424,14 @@ for i in topOD:
 print(topOD[0][0])
 #splits = topOD[0][0].strip("{} ")
 
-myfile='/home/thomasrw/Desktop/newLargeEmitterOut.xml'
-od.buildEmitter(topOD[0][0], myfile)
+#myfile='/home/thomasrw/Desktop/newLargeEmitterOut2.xml'
+myfile='/work/thoma525/' + output_name
+od.buildEmitter(topOD[0][0], myfile, 0, 7199)
+#mytree = ElementTree.parse(myfile)
+#myroot = mytree.getroot()
+#todo still need to re-compute OD matrix for second hour with different flow numbers
+#od.buildEmitter(topOD[0][0], myfile, 3600, 7199, myroot, "b")
+
 end = time.time()
 total = end - start
 print("time taken is: " + str(total))

@@ -172,6 +172,7 @@ class PlatoonManager2(simpla._platoonmanager.PlatoonManager):
             if (veh.getID() not in self._subscriptionResults):
                 # FIXME: For some reason, this is in rare occasions called with vehicles,
                 #        which have no subscription results.
+                print("RETURN CALLED")
                 return
             veh.state.speed = self._subscriptionResults[veh.getID()][tc.VAR_SPEED]
             veh.state.edgeID = self._subscriptionResults[veh.getID()][tc.VAR_ROAD_ID]
@@ -204,11 +205,12 @@ class PlatoonManager2(simpla._platoonmanager.PlatoonManager):
                     vehAheadID = veh.state.leaderInfo[0]
                     print("vehAheadID is: " + vehAheadID)
                     dist = veh.state.leaderInfo[1] + traci.vehicle.getLength(vehAheadID)
-                    while dist < self._catchupDist:
+                    while dist > 0 and dist < self._catchupDist: #add >0 check due to dist becoming negative in some situations due to loop info
                         #PLTNMGR2 replaces call to traci.vehicle.getLeader with _utils2.seekLeader
                         print('in the while loop')
+                        print(dist)
                         nextLeaderInfo = _utils2.seekLeader(vehAheadID, self._catchupDist - dist)
-                        print("this call:" + nextLeaderInfo)
+                        print("this call:")# + nextLeaderInfo)
                         if nextLeaderInfo is None:
                             break
                         vehAheadID = nextLeaderInfo[0]
@@ -216,7 +218,7 @@ class PlatoonManager2(simpla._platoonmanager.PlatoonManager):
                             #PLTNMGR2: Check if joining vehAheadID's platoon would violate the pltn max size constraint
                             # this matters because otherwise the vehicle may try to catchup to the vehAhead
                             if self.sizePolicyExists():
-                                leader = self._connectedVehicles(vehAheadID)
+                                leader = self._connectedVehicles[vehAheadID]
                                 if leader.getPlatoon().size() + veh.getPlatoon().size() > self.getMaxSize():
                                     # combined size would be too big, so keep looking within catchupDist
                                     print("CONTINUE")
@@ -233,6 +235,7 @@ class PlatoonManager2(simpla._platoonmanager.PlatoonManager):
                                        (vehAheadID, veh.getID(), dist + nextLeaderInfo[1]))
                             break
                         dist += nextLeaderInfo[1] + traci.vehicle.getLength(vehAheadID)
+                    print('out of the while loop')
 
     def _manageLeaders(self):
         '''_manageLeaders()
